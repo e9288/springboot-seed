@@ -24,15 +24,11 @@ public class HikvisionCommunicator {
 	private static final Logger logger = LoggerFactory.getLogger(HikvisionCommunicator.class);
 
 	@Value("${hikVision.appKey}")
-	private String appKey;
-//	private static String appKey = "54e71b1e750f4d6d9d4bb57c6dc6a786";
+	private String appKey
 	@Value("${hikVision.appSecret}")
 	private String appSecret;
-//	private static String appSecret = "ea0f4fbc48da46be92e8b670f477812c";
 
 
-//	private final static String ezBizUrl = "https://ieuopen.ezvizlife.com";
-	private final static String ezBizUrl = "https://isgpopen.ezvizlife.com";
 	private static HttpsURLConnection conn;
 
 	public static HttpsURLConnection getHttpsConn(String url, String path) {
